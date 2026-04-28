@@ -1,0 +1,4 @@
+import calendar
+a=int(input("Enter Year: "))
+year=calendar.calendar(a)
+print(year)
