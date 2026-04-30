@@ -1,0 +1,15 @@
+names=['ram','raj','klaus','caroline']
+marks=[[80,85,90],[95,75,40],[33,97,60],[27,10,17]]
+pos=1
+for i in range(4):
+  avg=sum(marks[i])
+  add=avg//3
+  if  add >=80:
+    print("{}.Mr/Ms {} has scored {}% - S Grade".format(pos,names[i].title(),add))
+  elif add<=40 and add>=60:
+     print("{}.Mr/Ms {} has scored {}% - B Grade".format(pos,names[i].title(),add))
+  elif add>=61 and add<=80:
+     print("{}.Mr/Ms {} has scored {}% - A Grade".format(pos,names[i].title(),add))
+  else:
+     print("{}.Mr/Ms {} has scored {}% - F Grade".format(pos,names[i].title(),add))
+pos+=1
