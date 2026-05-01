@@ -1,0 +1,25 @@
+n1=input("Enter first name: ")
+n2=input("Enter second name:")
+a=list(n1)
+b=list(n2)
+for i in range(len(a)):
+  for j in range(len(b)):
+    if a[i]==b[j]:
+      a[i]='3'
+      b[j]='3'
+      print(a,b)
+c=0
+for i in a:
+  if i!='3':
+    c+=1
+for i in b:
+  if i!='3':
+    c+=1
+print(c)
+
+f=0
+res=list('FLAMES')
+for i in range(5):
+  f=(f+(c-1))%len(res)
+  res.pop(f)
+print(res[0])
