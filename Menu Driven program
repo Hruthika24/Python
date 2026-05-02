@@ -1,0 +1,33 @@
+def sq():
+  a=int(input("Enter side:"))
+  print("Area:",a*a)
+def rect(l,b):
+  print("Area:",l*b)
+def cir():
+  r=int(input("Enter radius:"))
+  return (3.14*r*r)
+def tri(b,h):
+  return (0.5*b*h)
+while True:
+  print("1.SQUARE")
+  print("2.RECTANGLE")
+  print("3.CIRCLE")
+  print("4.TRIANGLE")
+  print("5.EXIT")
+  menu=input("Enter your choice:")
+  if menu=="1":
+    sq()
+  elif menu=="2":
+    l=int(input("Enter length:"))
+    b=int(input("Enter breadth:"))
+    rect(l,b)
+  elif menu=="3":
+    x=cir()
+    print("Area:",x)
+  elif menu=="4":
+    b=int(input("Enter base:"))
+    h=int(input("Enter height:"))
+    y=tri(b,h)
+    print("Area:",y)
+  else:
+    break
