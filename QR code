@@ -1,0 +1,9 @@
+! pip install qrcode
+import qrcode
+qr=qrcode.QRCode()
+a="TVK is a new CM of Tamil Nadu"
+qr.add_data(a)
+qr.make(fit=True)
+res=qr.make_image(fill_color="purple",back_color="pink")
+res.save("donkey.png")
+print("Created Successful")
