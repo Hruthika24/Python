@@ -1,0 +1,7 @@
+def abc(*args):
+  sum=0
+  for i in args:
+    sum+=i
+  print(sum)
+abc(20,8)
+abc(6666,9999,000,7,83,98,827,8)
