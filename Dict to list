@@ -1,0 +1,4 @@
+b={'A':2,'B':3,'C':5}
+a=[i[0] for i in b.items()]
+c=[i[1] for i in b.items()]
+print(a,c)
