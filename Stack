@@ -1,0 +1,20 @@
+class Stack():
+  def __init__(self):
+    self.l=[]
+  def push(self,a):
+    self.l.append(a)
+  def pop(self):
+    self.l.pop()
+  def display(self):
+    b="->".join(map(str,self.l))
+    print(b)
+  def peek(self):
+    print(self.l[-1])
+c=Stack()
+c.push(10)
+c.push(20)
+c.push(800)
+c.display()
+c.pop()
+c.display()
+c.peek()
