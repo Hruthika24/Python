@@ -1,0 +1,11 @@
+l=["eat","tea","tan","ate","nat","bat"]
+d={}
+for i in l:
+  key=" ".join(sorted(i))
+  if key not in d:
+    d[key]=[]
+  d[key].append(i)
+print(d)
+print(d.keys())
+print(d.values())
+print(d.items())
