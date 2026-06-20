@@ -1,0 +1,10 @@
+n=[10,2,8,11,15,9,14]
+first=n[0]
+for i in n:
+  if i<first:
+    second = first 
+    first = i
+  elif second>i>first:
+    second = i
+print(first)
+print(second)
